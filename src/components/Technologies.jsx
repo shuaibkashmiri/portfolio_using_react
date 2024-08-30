@@ -1,7 +1,7 @@
 import React from 'react'
 import { RiReactjsLine } from 'react-icons/ri'
 import { TbBrandJavascript } from "react-icons/tb";
-import { FaHtml5 ,FaNodeJs,FaGitAlt,FaCss3Alt,FaJS } from "react-icons/fa";
+import { FaHtml5 ,FaNodeJs,FaGitAlt,FaCss3Alt,} from "react-icons/fa";
 import { SiMongodb } from 'react-icons/si';
 
 const Technologies = () => {
