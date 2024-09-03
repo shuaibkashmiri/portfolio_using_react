@@ -1,7 +1,6 @@
 import React from 'react'
 import { RiReactjsLine } from 'react-icons/ri'
-import { TbBrandJavascript } from "react-icons/tb";
-import { FaHtml5 ,FaNodeJs,FaGitAlt,FaCss3Alt,} from "react-icons/fa";
+import { FaHtml5 ,FaNodeJs,FaGitAlt,FaCss3Alt,FaJsSquare} from "react-icons/fa";
 import { SiMongodb } from 'react-icons/si';
 
 const Technologies = () => {
@@ -19,7 +18,7 @@ const Technologies = () => {
             <SiMongodb className='text-7xl text-green-600'/>
             </div>
             <div className="rounded-2xl border-4 border-neutral-800 p-4">
-            <TbBrandJavascript className='text-7xl text-yellow-400'/>
+            <FaJsSquare className='text-7xl text-yellow-400'/>
             </div>
             <div className="rounded-2xl border-4 border-neutral-800 p-4">
             <FaHtml5 className='text-7xl text-orange-600'/>
