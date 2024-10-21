@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { HERO_CONTENT } from '../constants';
 import profilePic from "../assets/myprofile.jpg"
 import { motion } from "framer-motion"
@@ -12,6 +12,10 @@ const container=(delay)=>({
 })
 
 const Hero = () => {
+
+  useEffect(() => {
+    document.title = 'Shoaib Mushtaq Bhat | A Full-Stack Web Developer';
+  }, []);
   return (
     <div className='border-b border-neutral-900 pb-4 lg:mb-35'>
 <div className='flex flex-wrap'>

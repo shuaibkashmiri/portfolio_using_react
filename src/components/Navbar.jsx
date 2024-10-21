@@ -13,10 +13,10 @@ const Navbar = () => {
 <img src={logo} alt="logo" className='mx-2 w-36'/>
 </div>
 <div className='m-8 flex items-center justify-center gap-4 text-2xl'>
-    <FaLinkedin/>
-    <FaGithub/>
-    <FaInstagram/>
-    <FaSquareXTwitter/>
+    <a href="https://www.linkedin.com/in/shoaib-mushtaq-bhat-9a2666190?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target='_blank'><FaLinkedin/></a>
+    <a href="https://github.com/shuaibkashmiri" target='_blank'><FaGithub/></a>
+    <a href="https://www.instagram.com/shuaib_kashmiri_/" target='_blank'><FaInstagram/></a>
+    <a href=""><FaSquareXTwitter/></a>
    
 </div>
     </nav>
