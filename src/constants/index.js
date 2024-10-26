@@ -1,7 +1,7 @@
-import project1 from "../assets/projects/project-1.jpg";
-import project2 from "../assets/projects/project-2.jpg";
-import project3 from "../assets/projects/project-3.jpg";
-import project4 from "../assets/projects/project-4.jpg";
+import project1 from "../assets/projects/project-1.png";
+import project2 from "../assets/projects/project-2.png";
+import project3 from "../assets/projects/project-3.png";
+import project4 from "../assets/projects/project-4.png";
 
 export const HERO_CONTENT = `I'm Full Stack Web Developer The crossover between design and programming has always been of interest to me, I've been lucky enough to work alongside some talented teams on a number of high profile websites. I have honed my skills in front-end technologies like React , as well as back-end technologies like Node.js, MySQL, PostgreSQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
 
@@ -40,32 +40,32 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
-    title: "E-Commerce Website",
+    title: "Adventure Outfits E-Commerce Website",
     image: project1,
     description:
       "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
-    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
+    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB", "Express"],
   },
   {
-    title: "Task Management App",
+    title: "Algo Academy E-Learning Platform",
     image: project2,
     description:
-      "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
-    technologies: ["HTML", "CSS", "React", "Vercel"],
+      " A digital platform that is designed to facilitate educational and training experiences through electronic devices like smartphones, tablets, or computers.",
+    technologies: ["HTML", "SCSS", "React", "Node" ,"Express","MongoDB","Redux"],
   },
   {
-    title: "Portfolio Website",
+    title: " Shop Fusion E-Commerce Website",
     image: project3,
     description:
-      "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "React", "Bootstrap"],
+      " An online garment shop with a wide range of clothing, accessories, and shoes for women, men, kids, and babies. ",
+    technologies: ["HBS", "CSS","Bootstrap","Node","Express","MongoDB"],
   },
   {
     title: "Blogging Platform",
     image: project4,
     description:
       "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-    technologies: ["HTML", "CSS", "React", "Express", "mySQL"],
+    technologies: ["React","Meterial UI", "Redux" , "Express", "MongoDB"],
   },
 ];
 
