@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { HERO_CONTENT } from '../constants';
-import profilePic from "../assets/myprofile.jpg"
+import profilePic from "../assets/home_profile.png"
 import { motion } from "framer-motion"
 
 const container=(delay)=>({
@@ -46,7 +46,7 @@ className='my-2 max-w-xl py-6 font-light tracking-tighter'>{HERO_CONTENT}</motio
     initial={{x:100,opacity:0}}
     animate={{x:0,opacity:1}}
     transition={{duration:1,delay:1.2}}
-     src={profilePic} alt="Shoaib Mushtaq" />
+     src={profilePic} alt="Shoaib Mushtaq" className='w-80 ml-20'/>
 
 </div>
 </div>
