@@ -4,35 +4,38 @@ import { motion } from "framer-motion";
 
 const Projects = () => {
   return (
-    <div className="border-b border-gray-800 pb-10 bg-gray-900">
+    <div
+      id="projects"
+      className="scroll-mt-24 border-b border-gray-800 pb-10 bg-gray-900"
+    >
       {/* Section Title */}
       <motion.h2
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
         transition={{ duration: 0.5 }}
-        className="my-16 text-center text-5xl font-bold text-white"
+        className="my-12 text-center text-4xl font-bold text-white"
       >
         Projects
       </motion.h2>
 
       {/* Content Section */}
-      <div className="flex flex-wrap justify-center gap-8">
+      <div className="flex flex-wrap justify-center gap-6">
         {/* Project Cards */}
         {PROJECTS.map((project, index) => (
-          <div key={index} className="w-full lg:w-1/3 xl:w-1/4 px-4">
+          <div key={index} className="w-full sm:w-[340px] px-3">
             <motion.div
               whileInView={{ opacity: 1, x: 0 }}
               initial={{ opacity: 0, x: -100 }}
               transition={{ duration: 1 }}
-              className="bg-gray-800 p-6 rounded-lg shadow-lg h-full flex flex-col justify-between"
+              className="bg-gray-800 p-4 rounded-lg shadow-lg h-full"
             >
               {/* Project Image */}
-              <div className="flex justify-center mb-6">
+              <div className="flex justify-center mb-4">
                 <img
                   src={project.image}
                   alt={project.title}
-                  width={150}
-                  height={150}
+                  width={120}
+                  height={120}
                   className="rounded-lg shadow-md"
                 />
               </div>
@@ -42,19 +45,21 @@ const Projects = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 initial={{ opacity: 0, x: 100 }}
                 transition={{ duration: 1 }}
-                className="text-center lg:text-left"
+                className="text-center"
               >
-                <h6 className="mb-2 text-xl font-semibold text-white">
+                <h6 className="mb-2 text-lg font-semibold text-white">
                   {project.title}
                 </h6>
-                <p className="mb-4 text-gray-300">{project.description}</p>
+                <p className="mb-3 text-sm text-gray-300">
+                  {project.description}
+                </p>
 
                 {/* Project Technologies */}
-                <div className="flex flex-wrap justify-center lg:justify-start">
+                <div className="flex flex-wrap justify-center gap-1">
                   {project.technologies.map((tech, techIndex) => (
                     <span
                       key={techIndex}
-                      className="mr-2 mb-2 rounded-full bg-indigo-600 text-white px-3 py-1 text-sm font-medium"
+                      className="rounded-full bg-indigo-600 text-white px-2 py-0.5 text-xs font-medium"
                     >
                       {tech}
                     </span>

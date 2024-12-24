@@ -5,7 +5,10 @@ import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <div className="border-b border-gray-800 pb-10">
+    <div
+      id="about"
+      className="scroll-mt-24 border-b border-gray-800 pb-10 bg-gray-900"
+    >
       {/* Section Title */}
       <h1 className="my-16 text-center text-5xl font-bold text-white">
         About <span className="text-blue-400">Me</span>

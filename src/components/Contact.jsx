@@ -1,10 +1,11 @@
 import React from "react";
 import { CONTACT } from "../constants";
 import { motion } from "framer-motion";
+import { FaGithub, FaLinkedin, FaTwitter, FaFacebook } from "react-icons/fa";
 
 const Contact = () => {
   return (
-    <div className="bg-gray-900 py-8">
+    <div id="contact" className="bg-gray-900 py-8">
       {/* Footer Container */}
       <div className="container mx-auto px-4">
         <motion.div
@@ -34,25 +35,38 @@ const Contact = () => {
           {/* Social Media or Additional Info (Optional) */}
           <div className="mt-4 lg:mt-0">
             <h2 className="text-xl font-semibold text-white mb-4">Follow Me</h2>
-            <div className="flex justify-center lg:justify-start">
-              {/* You can replace with your actual social media links */}
+            <div className="flex justify-center lg:justify-start space-x-6">
               <a
-                href="#"
-                className="mr-4 text-indigo-600 hover:text-indigo-400 transition-colors"
+                href="https://github.com/shuaibkashmiri"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-indigo-600 hover:text-indigo-400 transition-colors text-2xl"
               >
-                Facebook
+                <FaGithub />
               </a>
               <a
                 href="#"
-                className="mr-4 text-indigo-600 hover:text-indigo-400 transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-indigo-600 hover:text-indigo-400 transition-colors text-2xl"
               >
-                LinkedIn
+                <FaLinkedin />
               </a>
               <a
                 href="#"
-                className="text-indigo-600 hover:text-indigo-400 transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-indigo-600 hover:text-indigo-400 transition-colors text-2xl"
               >
-                Twitter
+                <FaTwitter />
+              </a>
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-indigo-600 hover:text-indigo-400 transition-colors text-2xl"
+              >
+                <FaFacebook />
               </a>
             </div>
           </div>

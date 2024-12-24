@@ -18,56 +18,65 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="border-b border-gray-800 pb-10 lg:mb-16">
-      <div className="flex flex-wrap items-center">
-        {/* Left Section */}
-        <div className="w-full lg:w-1/2">
-          <div className="flex flex-col items-center lg:items-start">
-            {/* Name */}
+    <div
+      id="hero"
+      className="min-h-screen pt-20 md:pt-24 flex items-center justify-center bg-gray-900"
+    >
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-col md:flex-row items-center justify-between">
+          {/* Text Content */}
+          <div className="text-center md:text-left md:w-1/2">
             <motion.h1
-              variants={container(0)}
-              initial="hidden"
-              animate="visible"
-              className="pb-6 text-5xl font-bold tracking-tight text-white lg:mt-12 lg:text-6xl"
+              initial={{ opacity: 0, x: -100 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5 }}
+              className="text-4xl md:text-5xl font-bold mb-4"
             >
-              Shoaib Mushtaq
+              Hi, I'm <span className="text-cyan-400">Shoaib Mushtaq</span>
             </motion.h1>
 
-            {/* Role */}
-            <motion.span
-              variants={container(0.5)}
-              initial="hidden"
-              animate="visible"
-              className="bg-gradient-to-r from-blue-400 via-cyan-500 to-green-400 bg-clip-text text-2xl tracking-tight text-transparent lg:text-3xl"
+            <motion.h2
+              initial={{ opacity: 0, x: -100 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="text-2xl md:text-3xl mb-6"
             >
               Full-Stack Web Developer
-            </motion.span>
+            </motion.h2>
 
-            {/* Hero Content */}
             <motion.p
-              variants={container(1)}
-              initial="hidden"
-              animate="visible"
-              className="my-6 max-w-xl text-center font-light text-gray-400 lg:text-left"
+              initial={{ opacity: 0, x: -100 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5, delay: 0.4 }}
+              className="text-gray-300 mb-8"
             >
-              {HERO_CONTENT}
+              I build exceptional and accessible digital experiences for the
+              web.
             </motion.p>
-          </div>
-        </div>
 
-        {/* Right Section */}
-        <div className="w-full lg:w-1/2 lg:pl-8">
-          <div className="flex justify-center lg:justify-end">
-            {/* Profile Picture */}
-            <motion.img
-              initial={{ x: 100, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              transition={{ duration: 1, delay: 1.2 }}
-              src={profilePic}
-              alt="Shoaib Mushtaq"
-              className="w-60 rounded-lg shadow-lg lg:w-80"
-            />
+            <motion.div
+              initial={{ opacity: 0, x: -100 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5, delay: 0.6 }}
+            >
+              <a
+                href="#contact"
+                className="bg-cyan-400 text-gray-900 px-6 py-3 rounded-full font-semibold hover:bg-cyan-500 transition duration-300"
+              >
+                Contact Me
+              </a>
+            </motion.div>
           </div>
+
+          {/* Image */}
+          <motion.div
+            initial={{ opacity: 0, x: 100 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, delay: 0.8 }}
+            className="md:w-1/2 flex justify-center"
+          >
+            <img src={profilePic} alt="Shoaib Mushtaq" className="w-96 h-96" />
+          </motion.div>
         </div>
       </div>
     </div>

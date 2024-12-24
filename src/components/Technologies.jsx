@@ -25,7 +25,10 @@ const iconVariants = (duration) => ({
 
 const Technologies = () => {
   return (
-    <div className="border-b border-gray-800 pb-24">
+    <div
+      id="technologies"
+      className="scroll-mt-24 border-b border-gray-800 pb-10 bg-gray-900"
+    >
       {/* Section Title */}
       <motion.h1
         whileInView={{ opacity: 1, y: 0 }}
