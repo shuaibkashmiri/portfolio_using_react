@@ -20,8 +20,10 @@ const App = () => {
   }, []);
 
   const scrollToTop = () => {
-    const navbarSection = document.getElementById("navbar");
-    navbarSection?.scrollIntoView({ behavior: "smooth" });
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
   };
 
   return (
@@ -41,7 +43,7 @@ const App = () => {
       {/* Back to Top Button */}
       <button
         onClick={scrollToTop}
-        className={`fixed bottom-8 right-8 bg-indigo-600 hover:bg-indigo-700 text-white p-3 rounded-full shadow-lg transition-all duration-300 ${
+        className={`fixed bottom-8 right-8 bg-indigo-600 hover:bg-indigo-700 text-white p-3 rounded-full shadow-lg transition-all duration-300 z-50 ${
           showBackToTop
             ? "opacity-100 translate-y-0"
             : "opacity-0 translate-y-10"

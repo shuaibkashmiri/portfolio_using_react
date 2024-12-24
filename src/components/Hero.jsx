@@ -20,7 +20,7 @@ const Hero = () => {
   return (
     <div
       id="hero"
-      className="min-h-screen pt-20 md:pt-24 flex items-center justify-center bg-gray-900"
+      className="min-h-screen pt-28 md:pt-24 flex items-center justify-center bg-gray-900"
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row items-center justify-between">
@@ -73,7 +73,7 @@ const Hero = () => {
             initial={{ opacity: 0, x: 100 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 0.8 }}
-            className="md:w-1/2 flex justify-center"
+            className="md:w-1/2 flex justify-center mt-12 md:mt-0"
           >
             <img src={profilePic} alt="Shoaib Mushtaq" className="w-96 h-96" />
           </motion.div>
