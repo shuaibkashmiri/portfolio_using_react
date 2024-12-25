@@ -1,7 +1,7 @@
 import React from "react";
 import { CONTACT } from "../constants";
 import { motion } from "framer-motion";
-import { FaGithub, FaLinkedin, FaTwitter, FaFacebook } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaInstagram, FaFacebook } from "react-icons/fa";
 
 const Contact = () => {
   return (
@@ -45,7 +45,7 @@ const Contact = () => {
                 <FaGithub />
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com/in/shoaib-mushtaq-bhat-9a2666190/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-indigo-600 hover:text-indigo-400 transition-colors text-2xl"
@@ -53,15 +53,15 @@ const Contact = () => {
                 <FaLinkedin />
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/shuaib_kashmiri_/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-indigo-600 hover:text-indigo-400 transition-colors text-2xl"
               >
-                <FaTwitter />
+                <FaInstagram />
               </a>
               <a
-                href="#"
+                href="https://www.facebook.com/mohammadshuaib786/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-indigo-600 hover:text-indigo-400 transition-colors text-2xl"
